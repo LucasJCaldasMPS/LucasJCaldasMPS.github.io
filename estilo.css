@@ -1,0 +1,304 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+  /* Menu com os botões */
+
+header {
+    background-color: rgb(32, 32, 32);
+    color: white;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+#logo {
+    width: 200px;
+    position: absolute;
+    margin-left: 1%;
+}
+
+#menu {
+    font-family: 'Saira', sans-serif;
+    float: right;
+    margin-right: 5%;
+    list-style: none;
+    margin-top: 0px;
+}
+
+/* Botões*/
+.efeito {
+    border:none;
+    color:mintcream;
+    padding:16px;
+    font-family: 'Saira', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius:7px;
+    position:relative;
+    box-sizing:border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.efeito_um {
+    background-color: rgb(6, 126, 100);
+}
+
+.efeito_um:before {
+    content:'';
+    position:absolute;
+    top:0px;
+    width:0px;
+    left:0px;
+    height:52px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 7px;
+    transition: all 2s ease;
+}
+
+.efeito_um:hover:before {
+    width:100%;
+}
+
+li {
+    float: left;
+    padding: 5 5 5 5;
+}
+
+a {
+    text-decoration: none;
+    color:mintcream;
+}
+
+/* Fim do Menu*/
+
+
+/* Fundo do Site */
+
+#imagem_fundo {
+    background: url(img/fundo.jpg);
+    height: 100%;
+    text-align: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#titulo {
+    font-family: 'Saira', sans-serif;
+    color: rgb(0, 0, 0);
+    padding-top: 20%;
+    font-size: 350%;
+    text-shadow: 2px 2px 6px #00ffaa;
+    line-height: 1;
+    text-align: center;
+}
+
+#subtitulo {
+    font-family: 'Saira', sans-serif;
+    color: rgb(0, 0, 0);
+    margin-left: 18%;
+    margin-right: 18%;
+    border-top: 3px solid rgb(0, 0, 0);
+    text-shadow: 3px 3px 9px #00ffaa;
+}
+/* Botão */
+.efeitobotao {
+    color:mintcream;
+    padding:16px;
+    font-family: 'Saira', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius:7px;
+    position:relative;
+    box-sizing:border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.efeito_dois {
+    background-color: rgb(19, 83, 6);
+}
+
+.efeito_dois:before {
+    content:'';
+    position:absolute;
+    top:0px;
+    width:0px;
+    left:0px;
+    height:56px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 10px;
+    transition: all 2s ease;
+}
+
+.efeito_dois:hover:before {
+    width:100%;
+}
+.icone:hover {
+    transform: scale(1.350);
+}
+.icone {
+    transition: 500ms;
+    width: 68px;
+}
+/* Fim do Fundo do Site */
+
+
+/* Conteúdos */
+
+section {
+    padding: 20px;
+    float: left;
+}
+
+.destaque {
+    background-color: rgb(248, 247, 247);
+}
+
+.imgcura {
+    width: 90%;
+    height: 30%;
+}
+
+/* Colunas e Alinhamento */
+
+.coluna {
+    float: left;
+    padding: 0 5%;
+    position: relative;
+    text-align: center;
+}
+
+.dois {
+    width: 40%;
+}
+
+.quatro {
+    width: 15%;
+}
+
+.tres {
+    width: 29%;
+    padding: 0 2%;
+}
+
+.justificado {
+    font-family: 'Saira', sans-serif;
+    text-align: justify;
+}
+
+.centralizado {
+    font-family: 'Saira', sans-serif;
+    text-align: center;
+}
+
+.top {
+    padding:50px;
+}
+
+
+/*Rodapé*/
+
+footer {
+    background-color: silver;
+    float: left;
+    width: 100%;
+    color: black;
+}
+
+.name {
+    font-family: 'Saira', sans-serif;
+}
+
+.one {
+    width: 40%;
+    padding-top: 5%;
+    float: right;
+}
+
+.lado {
+    float: right;
+    padding-right: 5%;
+}
+
+.ladodoisem {
+    width: 90%;
+    height: 65%; 
+    padding-top: 5%;   
+}
+
+.ladodois {
+    padding-top: 50%;
+    float: right;
+}
+
+.central {
+    text-align:center;
+}
+
+.imgsaudavel{
+    width: 50%;
+    height: 35%;
+    float:right;
+}
+
+.iconecontato:hover {
+    transform: scale(1.350);
+}
+
+.iconecontato {
+    transition: 500ms;
+    padding-top: 5%;
+    width: 5%;
+}
+
+.destaqueo {
+    background-color: silver;
+    width: 35%;
+}
+
+/* Fim do Conteúdo */
+
+
+/* Responsividade */
+@media all and (max-width: 768px){
+    
+    #menu {
+        visibility: hidden;
+    }
+
+    .coluna, .dois, .tres, .quatro, .one, .doisem {
+        display: block;
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+        text-align: center;
+    }
+
+    .justificado {
+        font-family: 'Saira', sans-serif;
+        text-align: center;
+    }
+
+    #logodiv {
+        width: 100%;
+        position: relative;
+        text-align: center;
+    }
+
+    #logo {
+        margin: 0 0 0 0;
+        transform: translateX(-50%);
+    }
+
+    #imagem_fundo {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+    }
+}
